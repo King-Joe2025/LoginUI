@@ -7,8 +7,15 @@
 </head>
 <body>
     <h1>Welome to the login page of DataMiner</h1>
-    <label>Enter name:</label><input type="text">
+    <label>Enter name:</label><input id="sName" type="text">
     <br>
-    <label>Enter email</label><input type="text">
+    <label>Enter email</label><input id="sEmail" type="text">
+    <br>
+    <button id="btnRegister">Register</button>
+    <script>document.querySelector("#btnRegister").addEventListener("click",()=>{
+        alert("Thanks for registering");
+        document.querySelector("#sName").textContent="";
+       document.querySelector("#sEmail").textContent=""; 
+    })</script>
 </body>
 </html>
